@@ -1,7 +1,23 @@
+/* ============================== stili generali ======================================== */
 :root{
-
+    --main-bg-color: #022145;
 }
 
 body,html{
-    
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    overflow: hidden !important;
 }
+
+/* ==================== reset fullpage =============================== */
+.fp-overflow{
+    overflow: hidden !important;
+}
+
+#fp-nav ul li a span, #fp-slidesNav ul li a span{
+    background-color: white !important;
+}
+

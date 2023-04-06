@@ -1,0 +1,73 @@
+/* ============================= third section ===================================== */
+.thirdSection svg {
+    width: 100vw;
+    max-height: 99vh;
+    padding: 0;
+}
+
+.st1-third {
+    fill: none;
+    stroke: #70A1CD;
+    stroke-width: 3;
+}
+
+.st2-third {
+    opacity: 0.32;
+    fill: none;
+    stroke: #70A1CD;
+    stroke-width: 3;
+    enable-background: new;
+}
+
+.st3-third {
+    opacity: 0.417;
+    fill: none;
+    stroke: #70A1CD;
+    stroke-width: 3;
+    enable-background: new;
+}
+
+.st4-third {
+    fill: #70A1CD;
+}
+
+.st5-third {
+    opacity: 0.503;
+    fill: #70A1CD;
+    enable-background: new;
+}
+
+.st6-third {
+    fill: none;
+    stroke: #FC5745;
+    stroke-width: 3;
+}
+
+.st7-third {
+    opacity: 0.32;
+    fill: none;
+    stroke: #FC5745;
+    stroke-width: 3;
+    enable-background: new;
+}
+
+.st8-third {
+    opacity: 0.417;
+    fill: none;
+    stroke: #FC5745;
+    stroke-width: 3;
+    enable-background: new;
+}
+
+.st9-third {
+    fill: #FC6A45;
+}
+
+.st10-third {
+    fill: none;
+    stroke: #FC5745;
+}
+
+.st11-third {
+    opacity: 0.503;
+}
