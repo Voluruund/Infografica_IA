@@ -1,6 +1,13 @@
 /* ============================== stili generali ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --main-bg-color: #022145;
+    --white-color: #fff;
+    --animation-fade-time: 700ms;
+    --title-font: 'Ubuntu Mono', monospace;
+    --parag-font: 'Exo', sans-serif;
 }
 
 body,html{
@@ -10,6 +17,108 @@ body,html{
     padding: 0;
     background-color: var(--main-bg-color);
     overflow: hidden !important;
+    color: var(--white-color);
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--title-font);
+}
+
+p{
+    font-family: var(--parag-font);
+    font-size: 24px;
+    line-height: 2;
+    font-weight: 200;
+}
+
+.centered{
+    display: grid;
+    place-items: center;
+}
+
+.secondaryTitle{
+    font-size: 100px;
+    height: fit-content;
+}
+
+.d-200{
+    animation-delay: 200ms !important;
+}
+
+.d-400{
+    animation-delay: 400ms !important;
+}
+
+.d-600{
+    animation-delay: 600ms !important;
+}
+
+.d-800{
+    animation-delay: 800ms !important;
+}
+
+.fade-in-lr {
+    animation: fade-in-left-to-right-out var(--animation-fade-time) ease-out forwards;
+}
+
+.active .fade-in-lr {
+    opacity: 0;
+    animation: fade-in-left-to-right var(--animation-fade-time) ease-in forwards;
+    animation-delay: 400ms;
+}
+
+.fade-in-rl {
+    animation: fade-in-right-to-left-out var(--animation-fade-time) ease-out forwards;
+}
+
+.active .fade-in-rl {
+    opacity: 0;
+    animation: fade-in-right-to-left var(--animation-fade-time) ease-in forwards;
+    animation-delay: 400ms;
+}
+
+@keyframes fade-in-left-to-right {
+    0% {
+        transform: translateX(-40px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left-to-right-out {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-right-to-left {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right-to-left-out {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
 }
 
 /* ==================== reset fullpage =============================== */
@@ -20,4 +129,54 @@ body,html{
 #fp-nav ul li a span, #fp-slidesNav ul li a span{
     background-color: white !important;
 }
+
+/* =============================== first section ============================== */
+
+/* =============================== second section ============================== */
+
+/* =============================== third section ============================== */
+.containerThird{
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.s-titleWrap{
+    width: 100%;
+    height: fit-content;
+}
+
+.s-paragWrap{
+    height: 80%;
+    width: 100%;
+}
+
+.s-paragWrap .parag{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.blink{
+    animation: blinkAnim var(--animation-fade-time) infinite ease-in-out;
+}
+
+@keyframes blinkAnim {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+/* =============================== fourth section ============================== */
+
+/* =============================== fifth section ============================== */
+
+/* =============================== sixth section ============================== */
+
+/* =============================== seventh section ============================== */
 
