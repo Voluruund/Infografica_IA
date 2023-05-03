@@ -1,6 +1,7 @@
 /* ============================== stili generali ======================================== */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 
 :root{
     --main-bg-color: #022145;
@@ -8,6 +9,7 @@
     --animation-fade-time: 700ms;
     --title-font: 'Ubuntu Mono', monospace;
     --parag-font: 'Exo', sans-serif;
+    --animate-font: 'IBM Plex Mono', monospace;
 }
 
 body,html{
@@ -39,6 +41,15 @@ p{
 .secondaryTitle{
     font-size: 100px;
     height: fit-content;
+}
+
+/*currently used only in the second slide*/
+.animate{
+    max-width: 100%;
+}
+
+.m-0{
+    margin: 0;
 }
 
 .d-200{
@@ -133,6 +144,53 @@ p{
 /* =============================== first section ============================== */
 
 /* =============================== second section ============================== */
+.containerSecond{
+    width: 80vw;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    position: relative;
+}
+
+.containerSecond h2{
+    font-size: 5rem;
+}
+
+.sec-1h-wrapper{
+    height: inherit;
+    width: 50%;
+}
+
+.sec-2h-wrapper{
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-2h-wrapper .parag{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--animate-font);
+    font-weight: 400;
+}
+
+.secondTopWrapper{
+    height: 15%;
+    /* background-color: pink; */
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-template-columns: 20% 80%;
+}
 
 /* =============================== third section ============================== */
 .containerThird{
