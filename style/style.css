@@ -47,6 +47,7 @@ p{
 /*currently used only in the second slide*/
 .animate{
     max-width: 100%;
+    color: #70A1CD;
 }
 
 .m-0{
@@ -147,6 +148,10 @@ p{
 }
 
 /* =============================== first section ============================== */
+
+.firstSection{
+    background: url(/img/main-bg.png) no-repeat;
+}
 
 /* =============================== second section ============================== */
 .containerSecond{
