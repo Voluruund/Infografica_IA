@@ -340,6 +340,43 @@ p{
 
 /* =============================== fifth section ============================== */
 
+.containerFifth{
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.containerFifth .parag, .containerFifth .secondaryTitle{
+    text-align: right;
+}
+
+.containerFifth .secondaryTitle{
+    width: 70%;
+}
+
+.containerFifth svg{
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#cerchio_pallini_copia{
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rotation 40s linear infinite;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 /* =============================== sixth section ============================== */
 
 /* =============================== seventh section ============================== */

@@ -71,3 +71,88 @@
 .st11-third {
     opacity: 0.503;
 }
+
+
+
+/* ============================= fifth section ===================================== */
+.st0-fifth {
+    fill: #022145;
+}
+
+.st1-fifth {
+    clip-path: url(#SVGID_00000105419188241920140030000016785289682414064797_);
+}
+
+.st2-fifth {
+    fill: none;
+    stroke: #34FDFB;
+    stroke-width: 1.6021;
+    stroke-miterlimit: 10;
+}
+
+.st3-fifth {
+    fill: #34FDFB;
+}
+
+.st4-fifth {
+    fill: none;
+    stroke: #34FDFB;
+    stroke-width: 1.4841;
+    stroke-miterlimit: 10;
+}
+
+.st5-fifth {
+    fill: none;
+    stroke: #34FDFB;
+    stroke-width: 1.602;
+    stroke-miterlimit: 10;
+}
+
+.st6-fifth {
+    fill: none;
+    stroke: #FA5853;
+    stroke-width: 1.602;
+    stroke-miterlimit: 10;
+}
+
+.st7-fifth {
+    fill: #FA5853;
+}
+
+.st8-fifth {
+    fill: none;
+}
+
+.st9-fifth {
+    clip-path: url(#SVGID_00000105419188241920140030000016785289682414064797_);
+    fill: none;
+    stroke: #34FDFB;
+    stroke-width: 7;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 5, 8;
+}
+
+.st10-fifth {
+    display: none;
+    clip-path: url(#SVGID_00000105419188241920140030000016785289682414064797_);
+    fill: none;
+    stroke: #34FDFB;
+    stroke-width: 7;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 5, 8;
+}
+
+.st11-fifth {
+    opacity: 0.8;
+}
+
+.st12-fifth {
+    fill: #92C9F7;
+}
+
+.st13-fifth {
+    fill: #001B44;
+    stroke: #92C9F7;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
