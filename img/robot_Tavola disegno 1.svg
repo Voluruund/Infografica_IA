@@ -4,7 +4,7 @@
 	 viewBox="0 0 2834.6 2834.6" style="enable-background:new 0 0 2834.6 2834.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#192541;}
-	.st1{fill:#EB5955;}
+	.st1{fill:#92C9F7;}
 	.st2{fill:#17212B;}
 	.st3{fill:#042F40;}
 	.st4{fill:#FFFFFF;}
@@ -13,9 +13,6 @@
 	.st7{fill:#ECE7D4;}
 	.st8{fill:#A7A8A2;}
 </style>
-<g id="backgrpund">
-	<rect x="-41.2" y="-3.7" class="st0" width="2873.1" height="2833.9"/>
-</g>
 <g id="cerchio_rosso">
 	<path id="cerchio" class="st1" d="M1431.3,415.4C2265.1-32.2,2557,895,2557,1486.6s-297.3,1492.9-1125.7,1071.2
 		S305.6,2078.3,305.6,1486.6S597.5,863,1431.3,415.4z"/>

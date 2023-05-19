@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 
-:root{
+:root {
     --main-bg-color: #022145;
     --white-color: #fff;
     --secondary-title-color: #1060B1;
@@ -14,7 +14,8 @@
     --accent-color: #FC5745;
 }
 
-body,html{
+body,
+html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
@@ -24,58 +25,66 @@ body,html{
     color: var(--white-color);
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--title-font);
 }
 
-p{
+p {
     font-family: var(--parag-font);
     font-size: 24px;
     line-height: 2;
     font-weight: 200;
 }
 
-.centered{
+.centered {
     display: grid;
     place-items: center;
 }
 
-.secondaryTitle{
+.secondaryTitle {
     font-size: 100px;
     height: fit-content;
 }
 
 /*currently used only in the second slide*/
-.animate{
+.animate {
     max-width: 100%;
     color: #70A1CD;
 }
 
-.m-0{
+.fp-watermark {
+    display: none !important;
+}
+
+.m-0 {
     margin: 0;
 }
 
-.mt-20{
+.mt-20 {
     margin-top: 20px;
 }
 
-.ml-200{
+.ml-200 {
     margin-left: 200px;
 }
 
-.d-200{
+.d-200 {
     animation-delay: 200ms !important;
 }
 
-.d-400{
+.d-400 {
     animation-delay: 400ms !important;
 }
 
-.d-600{
+.d-600 {
     animation-delay: 600ms !important;
 }
 
-.d-800{
+.d-800 {
     animation-delay: 800ms !important;
 }
 
@@ -103,6 +112,7 @@ p{
     0% {
         transform: translateX(-40px);
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
@@ -114,6 +124,7 @@ p{
         transform: translateX(0px);
         opacity: 1;
     }
+
     100% {
         transform: translateX(-40px);
         opacity: 0;
@@ -144,21 +155,22 @@ p{
 }
 
 /* ==================== reset fullpage =============================== */
-.fp-overflow{
+.fp-overflow {
     overflow: hidden !important;
 }
 
-#fp-nav ul li a span, #fp-slidesNav ul li a span{
+#fp-nav ul li a span,
+#fp-slidesNav ul li a span {
     background-color: white !important;
 }
 
 /* =============================== first section ============================== */
 
-.firstSection{
+.firstSection {
     background: url(/img/main-bg.png) no-repeat;
 }
 
-.firstSection .anim1-typeWriter{
+.firstSection .anim1-typeWriter {
     font-size: 5em;
     width: 0px;
     border-right: 4px solid white;
@@ -171,6 +183,7 @@ p{
     from {
         width: 0;
     }
+
     to {
         width: 480px;
     }
@@ -180,12 +193,13 @@ p{
     from {
         border-right-color: white;
     }
+
     to {
         border-right-color: transparent;
     }
 }
 
-.anim2-typeWriter{
+.anim2-typeWriter {
     font-size: 5em;
     width: 0px;
     border-right: 4px solid transparent;
@@ -198,10 +212,12 @@ p{
     0% {
         width: 0;
     }
+
     98% {
         width: 440px;
     }
-    100%{
+
+    100% {
         width: 460px;
     }
 }
@@ -210,12 +226,13 @@ p{
     from {
         border-right-color: transparent;
     }
+
     to {
         border-right-color: white;
     }
 }
 
-.subtitle-main{
+.subtitle-main {
     font-family: var(--parag-font);
     color: var(--secondary-title-color);
     font-size: 2.5em;
@@ -224,27 +241,27 @@ p{
 }
 
 /* =============================== second section ============================== */
-.containerSecond{
+.containerSecond {
     width: 80vw;
     height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     position: relative;
 }
 
-.containerSecond h2{
+.containerSecond h2 {
     font-size: 5rem;
 }
 
-.sec-1h-wrapper{
+.sec-1h-wrapper {
     height: inherit;
     width: 50%;
 }
 
-.sec-2h-wrapper{
+.sec-2h-wrapper {
     height: inherit;
     width: 50%;
     display: flex;
@@ -253,7 +270,7 @@ p{
     flex-direction: column;
 }
 
-.sec-2h-wrapper .parag{
+.sec-2h-wrapper .parag {
     margin: 0;
     width: 100%;
     text-align: center;
@@ -261,7 +278,7 @@ p{
     font-weight: 400;
 }
 
-.secondTopWrapper{
+.secondTopWrapper {
     height: 15%;
     z-index: 2;
     width: 100%;
@@ -271,21 +288,21 @@ p{
     grid-template-columns: 20% 10% 64.5%;
 }
 
-.s2-sm-title{
+.s2-sm-title {
     width: 60ch;
     font-family: var(--animate-font);
     background-color: white;
     margin-bottom: 30px;
 }
 
-.s2-sm-title h3{
+.s2-sm-title h3 {
     color: var(--accent-color);
     font-size: 2em;
     margin: 0 0 0 10px;
     padding: 20px 0;
 }
 
-.s-date{
+.s-date {
     width: 100%;
     height: inherit;
     padding-bottom: 10px;
@@ -294,44 +311,46 @@ p{
     border-bottom: solid 1px white;
 }
 
-.s-date h3{
+.s-date h3 {
     margin: 0;
 }
 
 /* =============================== third section ============================== */
-.containerThird{
+.containerThird {
     width: 50vw;
     height: 70vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.s-titleWrap{
+.s-titleWrap {
     width: 100%;
     height: fit-content;
 }
 
-.s-paragWrap{
+.s-paragWrap {
     height: 80%;
     width: 100%;
 }
 
-.s-paragWrap .parag{
+.s-paragWrap .parag {
     width: 70%;
     margin: auto;
     text-align: center;
 }
 
-.blink{
+.blink {
     animation: blinkAnim var(--animation-fade-time) infinite ease-in-out;
 }
 
 @keyframes blinkAnim {
-    from{
+    from {
         opacity: 0;
-    }to{
+    }
+
+    to {
         opacity: 1;
     }
 }
@@ -340,7 +359,13 @@ p{
 
 /* =============================== fifth section ============================== */
 
-.containerFifth{
+.fifthSection {
+    height: 99vh;
+    max-height: 99vh;
+    position: relative;
+}
+
+.containerFifth {
     width: 50vw;
     height: 70vh;
     position: absolute;
@@ -349,35 +374,68 @@ p{
     transform: translateY(-50%);
 }
 
-.containerFifth .parag, .containerFifth .secondaryTitle{
+.containerFifth .parag,
+.containerFifth .secondaryTitle {
     text-align: right;
 }
 
-.containerFifth .secondaryTitle{
+.containerFifth .secondaryTitle {
     width: 70%;
 }
 
-.containerFifth svg{
+.fifthSection svg {
     transform-box: fill-box;
     transform-origin: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
 }
 
-#cerchio_pallini_copia{
+#cerchio_pallini_copia {
     transform-box: fill-box;
     transform-origin: center;
     animation: rotation 40s linear infinite;
 }
 
 @keyframes rotation {
-    0%{
+    0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
 /* =============================== sixth section ============================== */
 
-/* =============================== seventh section ============================== */
+.robot-img{
+    width: 900px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.containerSixth{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerSixth .parag{
+    text-align: left;
+}
+
+.containerSixth .secondaryTitle{
+    width: 70%;
+    margin: auto;
+}
+
+.containerSixth .s-paragWrap{
+    height: 60%;
+}
+
+/* =============================== seventh section ============================== */
