@@ -569,3 +569,26 @@ p {
     opacity: 1;
     transition: transform 0.2s linear 0.6s;
 }
+
+.p-dx{
+
+}
+
+.row-dx{
+    position: absolute;
+    z-index: 4;
+    top: 45%;
+    left: 63%;
+}
+
+.p-sx{
+    
+}
+
+.row-sx{
+    position: absolute;
+    z-index: 4;
+    top: 35%;
+    left: 10%;
+    width: 500px;
+}
