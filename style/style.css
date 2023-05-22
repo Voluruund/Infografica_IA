@@ -76,19 +76,19 @@ p {
     margin-left: 200px;
 }
 
-.d-200 {
+.active .d-200 {
     animation-delay: 200ms !important;
 }
 
-.d-400 {
+.active .d-400 {
     animation-delay: 400ms !important;
 }
 
-.d-600 {
+.active .d-600 {
     animation-delay: 600ms !important;
 }
 
-.d-800 {
+.active .d-800 {
     animation-delay: 800ms !important;
 }
 
@@ -361,6 +361,33 @@ p {
 
 /* =============================== fourth section ============================== */
 
+.fourthSection{
+    position: relative;
+}
+
+.fourthSection img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.containerFourth{
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.containerFourth .secondaryTitle{
+    width: 70%;
+}
+
+.containerFourth .parag{
+    text-align: left;
+}
+
 /* =============================== fifth section ============================== */
 
 .fifthSection {
@@ -448,130 +475,14 @@ p {
     position: relative;
 }
 
-.btn-76,
-.btn-76 *,
-.btn-76 :after,
-.btn-76 :before,
-.btn-76:after,
-.btn-76:before {
-    border: 0 solid;
-    box-sizing: border-box;
-}
-
-.btn-76 {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: #000;
-    background-image: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
-
-.btn-76:disabled {
-    cursor: default;
-}
-
-.btn-76:-moz-focusring {
-    outline: auto;
-}
-
-.btn-76 svg {
-    display: block;
-}
-
-.btn-76 [hidden] {
-    display: none;
-}
-
-.btn-76 {
-    box-sizing: border-box;
-    display: block;
-    font-weight: 900;
-    outline: 4px solid #fff;
-    outline-offset: -4px;
-    overflow: hidden;
-    padding: 1.2rem 3rem;
-    position: relative;
-    text-transform: uppercase;
-    transition: 0.2s linear 0.1s;
-}
-
-.btn-76:hover {
-    background: var(--accent-color);
-    box-shadow: 0 0 5px var(--accent-color), 0 0 25px var(--accent-color), 0 0 50px var(--accent-color),
-        0 0 100px var(--accent-color);
-    color: #fff;
-    outline-color: transparent;
-    transition: 0.2s linear 0.6s;
-}
-
-.btn-76 span {
-    display: block;
-    inset: 0;
-    position: absolute;
-}
-
-.btn-76 .top {
-    border-top: 4px solid var(--accent-color);
-    opacity: 0;
-    transform: translateX(calc(-100% + var(--progress, 0%)));
-    transition: none;
-}
-
-.btn-76:hover .top {
-    --progress: 100%;
-    opacity: 1;
-    transition: transform 0.2s linear;
-}
-
-.btn-76 .right {
-    border-right: 4px solid var(--accent-color);
-    opacity: 0;
-    transform: translateY(calc(-100% + var(--progress, 0%)));
-    transition: none;
-}
-
-.btn-76:hover .right {
-    --progress: 100%;
-    opacity: 1;
-    transition: transform 0.2s linear 0.2s;
-}
-
-.btn-76 .bottom {
-    border-bottom: 4px solid var(--accent-color);
-    opacity: 0;
-    transform: translateX(calc(100% - var(--progress, 0%)));
-    transition: none;
-}
-
-.btn-76:hover .bottom {
-    --progress: 100%;
-    opacity: 1;
-    transition: transform 0.2s linear 0.4s;
-}
-
-.btn-76 .left {
-    border-left: 4px solid var(--accent-color);
-    opacity: 0;
-    transform: translateY(calc(100% - var(--progress, 0%)));
-    transition: none;
-}
-
-.btn-76:hover .left {
-    --progress: 100%;
-    opacity: 1;
-    transition: transform 0.2s linear 0.6s;
-}
-
 .p-dx{
-
+    text-align: right;
+    position: absolute;
+    z-index: 4;
+    top: 27%;
+    left: 63%;
+    width: 600px;
+    font-size: 1.3em;
 }
 
 .row-dx{
@@ -579,16 +490,60 @@ p {
     z-index: 4;
     top: 45%;
     left: 63%;
+    width: 600px;
 }
 
 .p-sx{
-    
+    position: absolute;
+    z-index: 4;
+    top: 12%;
+    left: 7%;
+    width: 600px;
+    font-size: 1.3em;
+}
+
+.title-sm{
+    font-size: 2em;
+    border: none !important;
 }
 
 .row-sx{
     position: absolute;
     z-index: 4;
-    top: 35%;
-    left: 10%;
-    width: 500px;
+    top: 30%;
+    left: 7%;
+    width: 600px;
+}
+
+.title-sx{
+    position: absolute;
+    z-index: 4;
+    top: 6%;
+    left: 7%;
+}
+
+.title-dx{
+    position: absolute;
+    z-index: 4;
+    top: 22%;
+    left: 63% !important;
+    width: 600px;
+    text-align: right;
+}
+
+.p-bot{
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    width: 650px;
+    font-size: 1.3em;
+}
+
+.seventhSection .secondaryTitle{
+    position: absolute;
+    bottom: 18%;
+    padding-bottom: 20px;
+    left: 7%;
+    width: 600px;
+    border-bottom: solid 1px white;
 }

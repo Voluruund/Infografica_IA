@@ -58,7 +58,7 @@ function threeRender(){
     scene.add(midMesh);
 
     //top
-    const top = new THREE.SphereGeometry(0.7, 32, 32); 
+    const top = new THREE.SphereGeometry(0.56, 32, 32); 
     const topTexture = new THREE.TextureLoader().load('./img/Section-1-AI-b.png');
     const topMaterial = new THREE.MeshStandardMaterial({
         map: topTexture,
@@ -85,8 +85,8 @@ function threeRender(){
     requestAnimationFrame(animate);
     botMesh.rotation.y -= 0.004;
     midMesh.rotation.x += 0.002;
-    topMesh.rotation.y -= 0.004;
-    topMesh.rotation.x += 0.002;
+    topMesh.rotation.y -= 0.0009;
+    topMesh.rotation.x += 0.0009;
     render();
     }
 
